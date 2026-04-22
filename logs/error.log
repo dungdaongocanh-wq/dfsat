@@ -1,0 +1,334 @@
+[11-Apr-2026 22:12:01 Asia/Ho_Chi_Minh] === DEBUG INFO ===
+[11-Apr-2026 22:12:01 Asia/Ho_Chi_Minh] Current file: /home/liprolog/public_html/lipro/quotations/add.php
+[11-Apr-2026 22:12:01 Asia/Ho_Chi_Minh] Current dir: /home/liprolog/public_html/lipro/quotations
+[11-Apr-2026 22:12:01 Asia/Ho_Chi_Minh] Log file: /home/liprolog/public_html/lipro/quotations/../logs/error.log
+[11-Apr-2026 22:12:01 Asia/Ho_Chi_Minh] Is writable: YES
+[11-Apr-2026 22:15:50 Asia/Ho_Chi_Minh] === DEBUG INFO ===
+[11-Apr-2026 22:15:50 Asia/Ho_Chi_Minh] Current file: /home/liprolog/public_html/lipro/quotations/add.php
+[11-Apr-2026 22:15:50 Asia/Ho_Chi_Minh] Current dir: /home/liprolog/public_html/lipro/quotations
+[11-Apr-2026 22:15:50 Asia/Ho_Chi_Minh] Log file: /home/liprolog/public_html/lipro/quotations/../logs/error.log
+[11-Apr-2026 22:15:50 Asia/Ho_Chi_Minh] Is writable: YES
+[11-Apr-2026 22:15:59 Asia/Ho_Chi_Minh] === DEBUG INFO ===
+[11-Apr-2026 22:15:59 Asia/Ho_Chi_Minh] Current file: /home/liprolog/public_html/lipro/quotations/add.php
+[11-Apr-2026 22:15:59 Asia/Ho_Chi_Minh] Current dir: /home/liprolog/public_html/lipro/quotations
+[11-Apr-2026 22:15:59 Asia/Ho_Chi_Minh] Log file: /home/liprolog/public_html/lipro/quotations/../logs/error.log
+[11-Apr-2026 22:15:59 Asia/Ho_Chi_Minh] Is writable: YES
+[11-Apr-2026 22:16:03 Asia/Ho_Chi_Minh] === DEBUG INFO ===
+[11-Apr-2026 22:16:03 Asia/Ho_Chi_Minh] Current file: /home/liprolog/public_html/lipro/quotations/add.php
+[11-Apr-2026 22:16:03 Asia/Ho_Chi_Minh] Current dir: /home/liprolog/public_html/lipro/quotations
+[11-Apr-2026 22:16:03 Asia/Ho_Chi_Minh] Log file: /home/liprolog/public_html/lipro/quotations/../logs/error.log
+[11-Apr-2026 22:16:03 Asia/Ho_Chi_Minh] Is writable: YES
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh] === DEBUG INFO ===
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh] Current file: /home/liprolog/public_html/lipro/quotations/add.php
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh] Current dir: /home/liprolog/public_html/lipro/quotations
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh] Log file: /home/liprolog/public_html/lipro/quotations/../logs/error.log
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh] Is writable: YES
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh] DEBUG: Variables to bind
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh]   quotation_no: BG-2026-002 (s)
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh]   customer_id: 71 (i)
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh]   issue_date: 2026-04-11 (s)
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh]   valid_until:  (s)
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh]   currency: USD (s)
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh]   exchange_rate: 1 (d)
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh]   pol:  (s)
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh]   pod:  (s)
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh]   shipper:  (s)
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh]   packages: 1 (d)
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh]   gw: 1 (d)
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh]   cw: 1 (d)
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh]   notes:  (s)
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh]   status: draft (s)
+[11-Apr-2026 22:19:06 Asia/Ho_Chi_Minh]   created_by: 5 (i)
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh] === FORM SUBMISSION ===
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh] quotation_no: BG-2026-002
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh] customer_id: 71
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh] status: draft (type: string)
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh] created_by: 5 (type: integer)
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh] Total items: 1
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh] Starting database transaction...
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh] Preparing quotation insert...
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh] Binding quotation parameters (15 params)...
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh]   1. quotation_no (s): BG-2026-002
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh]   2. customer_id (i): 71
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh]   3. issue_date (s): 2026-04-11
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh]   4. valid_until (s): 
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh]   5. currency (s): USD
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh]   6. exchange_rate (d): 1
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh]   7. pol (s): 
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh]   8. pod (s): 
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh]   9. shipper (s): 
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh]   10. packages (d): 1
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh]   11. gw (d): 1
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh]   12. cw (d): 1
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh]   13. notes (s): 
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh]   14. status (s/ENUM): draft
+[11-Apr-2026 22:25:51 Asia/Ho_Chi_Minh]   15. created_by (i): 5
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh] === FORM SUBMISSION ===
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh] quotation_no: BG-2026-002
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh] customer_id: 71
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh] status: draft (type: string)
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh] created_by: 5 (type: integer)
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh] Total items: 1
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh] Starting database transaction...
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh] Preparing quotation insert...
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh] Binding quotation parameters (15 params)...
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh]   1. quotation_no (s): BG-2026-002
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh]   2. customer_id (i): 71
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh]   3. issue_date (s): 2026-04-11
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh]   4. valid_until (s): 
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh]   5. currency (s): USD
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh]   6. exchange_rate (d): 1
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh]   7. pol (s): 
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh]   8. pod (s): 
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh]   9. shipper (s): 
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh]   10. packages (d): 1
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh]   11. gw (d): 1
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh]   12. cw (d): 1
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh]   13. notes (s): 
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh]   14. status (s/ENUM): draft
+[11-Apr-2026 22:25:55 Asia/Ho_Chi_Minh]   15. created_by (i): 5
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh] === FORM SUBMISSION ===
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh] quotation_no: BG-2026-002
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh] customer_id: 71
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh] status: draft
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh] created_by: 5
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh] Total items: 1
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh] Starting database transaction...
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh] Preparing quotation insert...
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh] Executing quotation with array parameters...
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh]   quotation_no: BG-2026-002
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh]   customer_id: 71
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh]   issue_date: 2026-04-11
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh]   valid_until: 
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh]   currency: USD
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh]   exchange_rate: 1
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh]   pol: 
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh]   pod: 
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh]   shipper: 
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh]   packages: 1
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh]   gw: 1
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh]   cw: 1
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh]   notes: 
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh]   status: draft
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh]   created_by: 5
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh] Quotation inserted successfully with ID: 12
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh] Preparing quotation items insert...
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh] Inserting 1 items...
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh] Item 0 - code: CUSTOMS, desc: CUSTOMS CLEARANCE, price: 50000, qty: 1
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh] Item 0 inserted successfully
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh] All items inserted successfully
+[11-Apr-2026 22:27:57 Asia/Ho_Chi_Minh] Transaction committed successfully
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh] === FORM SUBMISSION ===
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh] quotation_no: BG-2026-003
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh] customer_id: 6
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh] status: draft
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh] created_by: 5
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh] Total items: 1
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh] Starting database transaction...
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh] Preparing quotation insert...
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh] Executing quotation with array parameters...
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh]   quotation_no: BG-2026-003
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh]   customer_id: 6
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh]   issue_date: 2026-04-13
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh]   valid_until: 2026-04-16
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh]   currency: VND
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh]   exchange_rate: 1
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh]   pol: MALAY
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh]   pod: HANOI
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh]   shipper: ROYAL SELANGOR INTERNATIONAL SDN BHD
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh]   packages: 3
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh]   gw: 15
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh]   cw: 15
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh]   notes: 
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh]   status: draft
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh]   created_by: 5
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh] Quotation inserted successfully with ID: 13
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh] Preparing quotation items insert...
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh] Inserting 1 items...
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh] Item 0 - code: CUSTOMS, desc: CUSTOMS CLEARANCE, price: 900000, qty: 1
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh] Item 0 inserted successfully
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh] All items inserted successfully
+[13-Apr-2026 12:20:56 Asia/Ho_Chi_Minh] Transaction committed successfully
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh] === FORM SUBMISSION ===
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh] quotation_no: BG-2026-004
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh] customer_id: 6
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh] status: draft
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh] created_by: 5
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh] Total items: 1
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh] Starting database transaction...
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh] Preparing quotation insert...
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh] Executing quotation with array parameters...
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh]   quotation_no: BG-2026-004
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh]   customer_id: 6
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh]   issue_date: 2026-01-25
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh]   valid_until: 2026-01-30
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh]   currency: USD
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh]   exchange_rate: 26321
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh]   pol: SHENZHEN (SZX)
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh]   pod: HAN, VIETNAM
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh]   shipper: EASTERN GOLDEN ART INTERNATIONAL DEVELOP (HONG KONG) LTD
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh]   packages: 18
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh]   gw: 257
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh]   cw: 257
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh]   notes: 
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh]   status: draft
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh]   created_by: 5
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh] Quotation inserted successfully with ID: 14
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh] Preparing quotation items insert...
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh] Inserting 1 items...
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh] Item 0 - code: CUSTOMS, desc: CUSTOMS CLEARANCE, price: 50, qty: 1
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh] Item 0 inserted successfully
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh] All items inserted successfully
+[13-Apr-2026 15:05:54 Asia/Ho_Chi_Minh] Transaction committed successfully
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] === FORM SUBMISSION ===
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] quotation_no: BG-2026-005
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] customer_id: 6
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] status: draft
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] created_by: 5
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Total items: 5
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Starting database transaction...
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Preparing quotation insert...
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Executing quotation with array parameters...
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh]   quotation_no: BG-2026-005
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh]   customer_id: 6
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh]   issue_date: 2026-12-30
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh]   valid_until: 2026-01-07
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh]   currency: USD
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh]   exchange_rate: 26377
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh]   pol: SIN, SINGAPORE
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh]   pod: ANOI, VIETNAM
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh]   shipper: RISIS PRIVATE LIMITED
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh]   packages: 3
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh]   gw: 654
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh]   cw: 859
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh]   notes: 
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh]   status: draft
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh]   created_by: 5
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Quotation inserted successfully with ID: 15
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Preparing quotation items insert...
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Inserting 5 items...
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Item 0 - code: FREIGHT, desc: Cước Vận Chuyển Quốc Tế, price: 1.95, qty: 859
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Item 0 inserted successfully
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Item 1 - code: DO, desc: Phí Lệnh Giao Hàng (D/O), price: 15, qty: 1
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Item 1 inserted successfully
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Item 2 - code: CUSTOMS, desc: PHÍ DỊCH VỤ KHAI BÁO HẢI QUAN ĐIỆN TỬ, price: 35, qty: 1
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Item 2 inserted successfully
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Item 3 - code: TRUCKING, desc: PHÍ VẬN CHUYỂN, price: 19, qty: 1
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Item 3 inserted successfully
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Item 4 - code: THC, desc: PHÍ XỬ LÝ HÀNG HÓA (Chi hộ tại kho hàng), price: 0, qty: 1
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Item 4 inserted successfully
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] All items inserted successfully
+[13-Apr-2026 19:39:43 Asia/Ho_Chi_Minh] Transaction committed successfully
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] === FORM SUBMISSION ===
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] quotation_no: BG-2026-006
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] customer_id: 6
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] status: draft
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] created_by: 5
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Total items: 5
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Starting database transaction...
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Preparing quotation insert...
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Executing quotation with array parameters...
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh]   quotation_no: BG-2026-006
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh]   customer_id: 6
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh]   issue_date: 2026-12-30
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh]   valid_until: 2026-01-07
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh]   currency: USD
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh]   exchange_rate: 26378
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh]   pol: KUALA LUMPUR, MALAYSIA
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh]   pod: HO CHI MINH, VIETNAM
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh]   shipper: ROYAL SELANGOR INTERNATIONAL SDN BHD
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh]   packages: 1
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh]   gw: 12
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh]   cw: 17
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh]   notes: 
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh]   status: draft
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh]   created_by: 5
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Quotation inserted successfully with ID: 16
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Preparing quotation items insert...
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Inserting 5 items...
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Item 0 - code: FREIGHT, desc: Cước Vận Chuyển Quốc Tế, price: 8, qty: 17
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Item 0 inserted successfully
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Item 1 - code: DO, desc: Phí Lệnh Giao Hàng (D/O), price: 25, qty: 1
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Item 1 inserted successfully
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Item 2 - code: CUSTOMS, desc: PHÍ DỊCH VỤ KHAI BÁO HẢI QUAN ĐIỆN TỬ, price: 35, qty: 1
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Item 2 inserted successfully
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Item 3 - code: TRUCKING, desc: PHÍ VẬN CHUYỂN, price: 23, qty: 1
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Item 3 inserted successfully
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Item 4 - code: THC, desc: PHÍ XỬ LÝ HÀNG HÓA, price: 0, qty: 1
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Item 4 inserted successfully
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] All items inserted successfully
+[13-Apr-2026 19:43:38 Asia/Ho_Chi_Minh] Transaction committed successfully
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] === FORM SUBMISSION ===
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] quotation_no: BG-2026-014
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] customer_id: 73
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] status: sent
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] created_by: 5
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] Total items: 4
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] Starting database transaction...
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] Preparing quotation insert...
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] Executing quotation with array parameters...
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh]   quotation_no: BG-2026-014
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh]   customer_id: 73
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh]   issue_date: 2026-04-21
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh]   valid_until: 2026-04-30
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh]   currency: USD
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh]   exchange_rate: 1
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh]   pol: HAN
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh]   pod: CDG
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh]   shipper: Công Ty Cổ Phần Nông Lâm Nghiệp Đức Phú
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh]   packages: 1
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh]   gw: 2000
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh]   cw: 2000
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh]   notes: 
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh]   status: sent
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh]   created_by: 5
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] Quotation inserted successfully with ID: 24
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] Preparing quotation items insert...
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] Inserting 4 items...
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] Item 0 - code: CUSTOMS, desc: CUSTOMS CLEARANCE, price: 40, qty: 1
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] Item 0 inserted successfully
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] Item 1 - code: HANDLING, desc: HANDLING, price: 10, qty: 1
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] Item 1 inserted successfully
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] Item 2 - code: HANDLING, desc: CUSTOMS TRANSIT, price: 20, qty: 1
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] Item 2 inserted successfully
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] Item 3 - code: STORAGE, desc: STORAGE, price: 0, qty: 1
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] Item 3 inserted successfully
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] All items inserted successfully
+[21-Apr-2026 15:44:44 Asia/Ho_Chi_Minh] Transaction committed successfully
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] === FORM SUBMISSION ===
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] quotation_no: BG-2026-015
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] customer_id: 74
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] status: draft
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] created_by: 5
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] Total items: 4
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] Starting database transaction...
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] Preparing quotation insert...
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] Executing quotation with array parameters...
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh]   quotation_no: BG-2026-015
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh]   customer_id: 74
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh]   issue_date: 2026-04-21
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh]   valid_until: 2026-04-30
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh]   currency: USD
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh]   exchange_rate: 1
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh]   pol: HAN
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh]   pod: CDG
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh]   shipper: Công Ty Cổ Phần Nông Lâm Nghiệp Đức Phú
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh]   packages: 1
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh]   gw: 2000
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh]   cw: 2000
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh]   notes: 
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh]   status: draft
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh]   created_by: 5
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] Quotation inserted successfully with ID: 25
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] Preparing quotation items insert...
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] Inserting 4 items...
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] Item 0 - code: FREIGHT, desc: FREIGHT - Cước Vận Chuyển Quốc Tế, price: 5.7, qty: 2000
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] Item 0 inserted successfully
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] Item 1 - code: HANDLING, desc: X-RAY, price: 0.019, qty: 2000
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] Item 1 inserted successfully
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] Item 2 - code: HANDLING, desc: AWB + AMS, price: 50, qty: 1
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] Item 2 inserted successfully
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] Item 3 - code: HANDLING, desc: HANDLING, price: 20, qty: 1
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] Item 3 inserted successfully
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] All items inserted successfully
+[21-Apr-2026 15:56:31 Asia/Ho_Chi_Minh] Transaction committed successfully
