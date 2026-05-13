@@ -192,7 +192,7 @@ if (file_exists($logoPath)) {
 
 xr($sheet, $R, 32);
 xm($sheet, "D{$R}:K{$R}");
-xc($sheet, "D{$R}", 'LIPRO LOGISTICS CO.,LTD');
+xc($sheet, "D{$R}", 'DFAST LOGISTICS CO.,LTD');
 xs($sheet, "D{$R}", [
     'font'      => ['bold' => true, 'size' => 22, 'name' => 'Calibri',
                     'color' => ['rgb' => '1B3A6B']],
@@ -222,7 +222,7 @@ xs($sheet, "D{$R}", [
                     'vertical'   => Alignment::VERTICAL_CENTER],
 ]);
 xm($sheet, "E{$R}:G{$R}");
-xc($sheet, "E{$R}", 'No. 6 Lane 1002 Lang Street, Lang Ward, Hanoi City, Vietnam');
+xc($sheet, "E{$R}", 'No. 58 Lien Xa Street, Thien Loc Commune, Hanoi City, Vietnam');
 xs($sheet, "E{$R}", [
     'font'      => ['size' => 10, 'name' => 'Calibri'],
     'alignment' => ['vertical' => Alignment::VERTICAL_CENTER, 'wrapText' => true],
@@ -249,7 +249,7 @@ xs($sheet, "H{$R}", [
                     'vertical'   => Alignment::VERTICAL_CENTER],
 ]);
 xm($sheet, "I{$R}:K{$R}");
-xc($sheet, "I{$R}", 'lipro.logistics@gmail.com');
+xc($sheet, "I{$R}", 'dungdaongocanh@gmail.com');
 xs($sheet, "I{$R}", [
     'font'      => ['size' => 10, 'name' => 'Calibri',
                     'color' => ['rgb' => '0563C1'], 'underline' => true],
@@ -559,9 +559,9 @@ function drawPayBlock($sheet, &$R, $title, $rows) {
 }
 
 drawPayBlock($sheet, $R, 'Payment account information', [
-    ['Account No:',  '9039998888'],
-    ['Bank:',        'Military Commercial Joint Stock Bank (MB bank)'],
-    ['Beneficiary:', 'CONG TY TNHH LIPRO LOGISTICS CO.,LTD'],
+    ['Account No:',  '67339999'],
+    ['Bank:',        'Ngân hàng Kỹ thương Việt Nam (TECHCOMBANK)'],
+    ['Beneficiary:', 'CONG TY TNHH DFAST LOGISTICS'],
 ]);
 
 xr($sheet, $R, 10); $R++;

@@ -3,7 +3,7 @@
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');       // XAMPP mặc định là root
 define('DB_PASS', '');           // XAMPP mặc định không có password
-define('DB_NAME', 'lipro');
+define('DB_NAME', 'dfsat');
 
 // Tạo kết nối
 function getDBConnection() {
@@ -25,7 +25,7 @@ session_start();
 // Kiểm tra đăng nhập, nếu chưa → redirect login
 function checkLogin() {
     if (!isset($_SESSION['user_id'])) {
-        header("Location: /lipro/login.php");
+        header("Location: /dfsat/login.php");
         exit();
     }
 }

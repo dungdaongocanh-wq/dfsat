@@ -76,7 +76,7 @@ if (file_exists($logo)) {
 }
 $sheet->getRowDimension($r)->setRowHeight(24);
 $sheet->mergeCells("D{$r}:J{$r}");
-$sheet->setCellValue("D{$r}", 'LIPRO LOGISTICS CO., LTD');
+$sheet->setCellValue("D{$r}", 'DFAST LOGISTICS CO., LTD');
 $sheet->getStyle("D{$r}")->applyFromArray([
     'font'      => ['bold'=>true,'size'=>17,'color'=>['rgb'=>$C_RED],'name'=>'Times New Roman'],
     'alignment' => ['horizontal'=>Alignment::HORIZONTAL_CENTER,'vertical'=>Alignment::VERTICAL_CENTER],
@@ -84,9 +84,9 @@ $sheet->getStyle("D{$r}")->applyFromArray([
 $r++;
 
 foreach ([
-    'No. 6 Lane 1002 Lang Street, Lang Ha Ward, Dong Da District, Hanoi City, Vietnam',
-    'Tel: (+84) 366 666 322     Email: lipro.logistics@gmail.com',
-    'MST / Tax Code: 0110453612',
+    'No. 58 Lien Xa Street, Thien Loc Commune, Hanoi City, Vietnam',
+    'Tel: (+84) 366 666 322     Email: dungdaongocanh@gmail.com',
+    'MST / Tax Code: 0111372067',
 ] as $line) {
     $sheet->getRowDimension($r)->setRowHeight(13);
     $sheet->mergeCells("D{$r}:J{$r}");
@@ -427,9 +427,9 @@ $sheet->getStyle("B{$r}")->applyFromArray([
 $r++;
 
 foreach ([
-    ['Số tài khoản / Account No:', '9039998888'],
-    ['Ngân hàng / Bank:',          'Military Commercial Joint Stock Bank (MB Bank)'],
-    ['Người thụ hưởng / Beneficiary:', 'CONG TY TNHH LIPRO LOGISTICS'],
+    ['Số tài khoản / Account No:', '67339999'],
+    ['Ngân hàng / Bank:',          'Ngân hàng Kỹ thương Việt Nam (TECHCOMBANK)'],
+    ['Người thụ hưởng / Beneficiary:', 'CONG TY TNHH DFAST LOGISTICS'],
 ] as [$l, $v]) {
     $sheet->getRowDimension($r)->setRowHeight(16);
     $sheet->mergeCells("B{$r}:D{$r}");
@@ -461,7 +461,7 @@ $sheet->getStyle("G{$r}")->applyFromArray(['font'=>['bold'=>true,'size'=>9,'name
 $r += 4;
 
 $sheet->getRowDimension($r)->setRowHeight(14);
-$sheet->mergeCells("B{$r}:E{$r}"); $sheet->setCellValue("B{$r}", 'LIPRO LOGISTICS CO., LTD');
+$sheet->mergeCells("B{$r}:E{$r}"); $sheet->setCellValue("B{$r}", 'DFAST LOGISTICS CO., LTD');
 $sheet->getStyle("B{$r}")->applyFromArray([
     'font'    => ['bold'=>true,'size'=>9,'color'=>['rgb'=>$C_RED],'name'=>'Calibri'],
     'alignment' => ['horizontal'=>Alignment::HORIZONTAL_CENTER],

@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </form>
                     
                     <div class="text-center mt-3">
-                        <small class="text-muted">LIPRO LOGISTICS By DungDNA</small>
+                        <small class="text-muted">DFAST LOGISTICS By DungDNA</small>
                     </div>
                 </div>
             </div>

@@ -199,22 +199,22 @@ xr($sheet, $R, 5); $R++;
 xm($sheet, "B{$R}:E8");
 xr($sheet, $R, 30);
 
-// RichText logo 2 dòng: "LIPRO" lớn + "· L O G I S T I C S ·" nhỏ
+// RichText logo 2 dòng: "DFAST" lớn + "· L O G I S T I C S ·" nhỏ
 $logoFull = new RichText();
 
-$l2 = $logoFull->createTextRun("L");
+$l2 = $logoFull->createTextRun("D");
 $l2->getFont()->setBold(true)->setSize(38)->setName('Arial Black')
    ->setColor(new Color('FF1B3A6B'));
-$i2 = $logoFull->createTextRun("I");
+$i2 = $logoFull->createTextRun("F");
 $i2->getFont()->setBold(true)->setSize(38)->setName('Arial Black')
    ->setColor(new Color('FFF4B942'));
-$p2 = $logoFull->createTextRun("P");
+$p2 = $logoFull->createTextRun("A");
 $p2->getFont()->setBold(true)->setSize(38)->setName('Arial Black')
    ->setColor(new Color('FF1B3A6B'));
-$r2 = $logoFull->createTextRun("R");
+$r2 = $logoFull->createTextRun("S");
 $r2->getFont()->setBold(true)->setSize(38)->setName('Arial Black')
    ->setColor(new Color('FFF4B942'));
-$o2 = $logoFull->createTextRun("O");
+$o2 = $logoFull->createTextRun("T");
 $o2->getFont()->setBold(true)->setSize(38)->setName('Arial Black')
    ->setColor(new Color('FF1B3A6B'));
 
@@ -244,7 +244,7 @@ $sheet->getStyle("B{$R}:E8")->applyFromArray([
 // Row 2 — Tên công ty
 xr($sheet, $R, 30);
 xm($sheet, "F{$R}:O{$R}");
-xc($sheet, "F{$R}", 'LIPRO LOGISTICS CO.,LTD');
+xc($sheet, "F{$R}", 'DFAST LOGISTICS CO.,LTD');
 xs($sheet, "F{$R}", [
     'font'      => ['bold' => true, 'size' => 20, 'name' => 'Calibri',
                     'color' => ['rgb' => '1B3A6B']],
@@ -284,7 +284,7 @@ xs($sheet, "F{$R}", [
                     'vertical'   => Alignment::VERTICAL_CENTER],
 ]);
 xm($sheet, "G{$R}:O{$R}");
-xc($sheet, "G{$R}", 'No. 6 Lane 1002 Lang Street, Lang Ward, Hanoi City, Vietnam');
+xc($sheet, "G{$R}", 'No. 58 Lien Xa Street, Thien Loc Commune, Hanoi City, Vietnam');
 xs($sheet, "G{$R}", [
     'font'      => ['size' => 10, 'name' => 'Calibri', 'color' => ['rgb' => '333333']],
     'alignment' => ['horizontal' => Alignment::HORIZONTAL_RIGHT,
@@ -320,7 +320,7 @@ xs($sheet, "F{$R}", [
                     'vertical'   => Alignment::VERTICAL_CENTER],
 ]);
 xm($sheet, "G{$R}:O{$R}");
-xc($sheet, "G{$R}", 'lipro.logistics@gmail.com');
+xc($sheet, "G{$R}", 'dungdaongocanh@gmail.com');
 xs($sheet, "G{$R}", [
     'font'      => ['size' => 10, 'name' => 'Calibri',
                     'color' => ['rgb' => '0563C1'], 'underline' => true],

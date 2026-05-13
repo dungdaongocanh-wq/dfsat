@@ -125,7 +125,7 @@ if (file_exists($logo)) {
 
 $sheet->getRowDimension($r)->setRowHeight(22);
 $sheet->mergeCells("D{$r}:J{$r}");
-$sheet->setCellValue("D{$r}", 'LIPRO LOGISTICS CO., LTD');
+$sheet->setCellValue("D{$r}", 'DFAST LOGISTICS CO., LTD');
 S($sheet, "D{$r}", [
     'font'      => ['bold'=>true,'size'=>16,'color'=>['rgb'=>$C_RED],'name'=>'Times New Roman'],
     'alignment' => ['horizontal'=>Alignment::HORIZONTAL_CENTER,'vertical'=>Alignment::VERTICAL_CENTER],
@@ -133,9 +133,9 @@ S($sheet, "D{$r}", [
 $r++;
 
 $compLines = [
-    'No. 6 Lane 1002 Lang Street, Lang Ha Ward, Dong Da District, Hanoi City, Vietnam',
-    'Tel: (+84) 366 666 322     Email: lipro.logistics@gmail.com',
-    'MST / Tax Code: 0110453612',
+    'No. 58 Lien Xa Street, Thien Loc Commune, Hanoi City, Vietnam',
+    'Tel: (+84) 366 666 322     Email: dungdaongocanh@gmail.com',
+    'MST / Tax Code: 0111372067',
 ];
 foreach ($compLines as $line) {
     $sheet->getRowDimension($r)->setRowHeight(13);
@@ -443,7 +443,7 @@ for ($i = 0; $i < 3; $i++) {
 
 $sheet->getRowDimension($r)->setRowHeight(14);
 $sheet->mergeCells("G{$r}:J{$r}");
-$sheet->setCellValue("G{$r}", 'LIPRO LOGISTICS CO., LTD');
+$sheet->setCellValue("G{$r}", 'DFAST LOGISTICS CO., LTD');
 S($sheet, "G{$r}", [
     'font'      => ['bold'=>true,'size'=>9,'color'=>['rgb'=>$C_RED],'name'=>'Arial'],
     'alignment' => ['horizontal'=>Alignment::HORIZONTAL_CENTER,'vertical'=>Alignment::VERTICAL_CENTER],

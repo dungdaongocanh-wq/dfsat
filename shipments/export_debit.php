@@ -138,8 +138,8 @@ $r = 1;
 // ============================================================
 rowH($sheet, $r, 6); $r++;   // row 1 — padding trên
 
-// ── LOGO TEXT "LIPRO" (B2:C7) ─────────────────────────────
-// Tạo logo bằng cell style: chữ LIPRO to, đậm, màu nổi, nền xanh nhạt
+// ── LOGO TEXT "DFAST" (B2:C7) ─────────────────────────────
+// Tạo logo bằng cell style: chữ DFAST to, đậm, màu nổi, nền xanh nhạt
 // Dùng merge B2:C7 để chiếm cùng vùng với ảnh logo cũ
 rowH($sheet, $r, 22);
 merge($sheet, "B{$r}:C7");
@@ -158,8 +158,8 @@ if (file_exists($logoPath)) {
     $drawing->setWorksheet($sheet);
 } else {
     // Fallback: logo chữ tạo bằng cell style
-    // Dòng chữ "LIPRO" lớn
-    setCell($sheet, "B{$r}", 'LIPRO');
+    // Dòng chữ "DFAST" lớn
+    setCell($sheet, "B{$r}", 'DFAST');
     styleRange($sheet, "B{$r}", [
         'font' => [
             'bold'  => true,
@@ -178,14 +178,14 @@ if (file_exists($logoPath)) {
     ]);
 }
 
-// Thêm dòng sub-text "LOGISTICS" ngay dưới chữ LIPRO
+// Thêm dòng sub-text "LOGISTICS" ngay dưới chữ DFAST
 // (Sẽ đặt vào row $r+1 trong phạm vi merge B:C)
 // Vì B2:C7 đã merge, ta đặt sub-text vào B3 nhưng thực ra B2 đã merge hết
 // → Giải pháp: vẽ logo text 2 dòng bằng Rich Text
 if (!file_exists($logoPath)) {
     // Dùng Rich Text để có 2 dòng trong 1 cell
     $richText = new \PhpOffice\PhpSpreadsheet\RichText\RichText();
-    $run1 = $richText->createTextRun('LIPRO');
+    $run1 = $richText->createTextRun('DFAST');
     $run1->getFont()->setBold(true)->setSize(28)->setColor(new \PhpOffice\PhpSpreadsheet\Style\Color('FF' . C_DARK_BLUE))->setName('Calibri');
     $richText->createText("\n");
     $run2 = $richText->createTextRun('LOGISTICS');
@@ -216,7 +216,7 @@ if (!file_exists($logoPath)) {
 
 // Tên công ty (row 2)
 merge($sheet, "D{$r}:H{$r}");
-setCell($sheet, "D{$r}", 'LIPRO LOGISTICS CO.,LTD');
+setCell($sheet, "D{$r}", 'DFAST LOGISTICS CO.,LTD');
 styleRange($sheet, "D{$r}", [
     'font'      => ['bold' => true, 'size' => 17, 'color' => ['rgb' => C_ACCENT], 'name' => 'Calibri'],
     'alignment' => ['horizontal' => Alignment::HORIZONTAL_CENTER, 'vertical' => Alignment::VERTICAL_CENTER],
@@ -234,7 +234,7 @@ rowH($sheet, $r, 14); $r++;
 
 // Address (row 4)
 merge($sheet, "D{$r}:H{$r}");
-setCell($sheet, "D{$r}", 'No. 6 Lane 1002 Lang Street, Lang Ward, Hanoi, Vietnam');
+setCell($sheet, "D{$r}", 'No. 58 Lien Xa Street, Thien Loc Commune, Hanoi City, Vietnam');
 styleRange($sheet, "D{$r}", [
     'font'      => ['size' => 9, 'color' => ['rgb' => '666666'], 'name' => 'Calibri'],
     'alignment' => ['horizontal' => Alignment::HORIZONTAL_CENTER],
@@ -243,7 +243,7 @@ rowH($sheet, $r, 14); $r++;
 
 // Phone & Email (row 5)
 merge($sheet, "D{$r}:H{$r}");
-setCell($sheet, "D{$r}", 'Tel: (+84) 366 666 322     Email: lipro.logistics@gmail.com');
+setCell($sheet, "D{$r}", 'Tel: (+84) 366 666 322     Email: dungdaongocanh@gmail.com');
 styleRange($sheet, "D{$r}", [
     'font'      => ['size' => 9, 'color' => ['rgb' => '666666'], 'name' => 'Calibri'],
     'alignment' => ['horizontal' => Alignment::HORIZONTAL_CENTER],
@@ -252,7 +252,7 @@ rowH($sheet, $r, 14); $r++;
 
 // Tax code (row 6)
 merge($sheet, "D{$r}:H{$r}");
-setCell($sheet, "D{$r}", 'MST / Tax Code: 0110453612');
+setCell($sheet, "D{$r}", 'MST / Tax Code: 0111372067');
 styleRange($sheet, "D{$r}", [
     'font'      => ['size' => 9, 'color' => ['rgb' => '888888'], 'name' => 'Calibri'],
     'alignment' => ['horizontal' => Alignment::HORIZONTAL_CENTER],
@@ -702,12 +702,12 @@ function bankRow($sheet, &$r, $label, $valueLeft, $valueRight) {
     $r++;
 }
 
-bankRow($sheet, $r, 'Chu TK:',      'CONG TY TNHH LIPRO LOGISTICS',  'VU THUY LINH');
-bankRow($sheet, $r, 'So TK:',       '9039998888',                      '19032342305016');
-bankRow($sheet, $r, 'Ngan hang:',   'MB Bank (Quan doi)',               'Techcombank');
+bankRow($sheet, $r, 'Chu TK:',      'CONG TY TNHH DFAST LOGISTICS',  'VU THUY LINH');
+bankRow($sheet, $r, 'So TK:',       '67339999',                        '19032342305016');
+bankRow($sheet, $r, 'Ngan hang:',   'Techcombank',                     'Techcombank');
 bankRow($sheet, $r, 'Chi nhanh:',   'Ha Noi',                           'Ha Noi');
 bankRow($sheet, $r, 'Noi dung CK:',
-    'LIPRO - ' . ($shipment['job_no'] ?? '') . ' - ' . ($shipment['hawb'] ?? ''),
+    'DFAST - ' . ($shipment['job_no'] ?? '') . ' - ' . ($shipment['hawb'] ?? ''),
     'POB - '   . ($shipment['job_no'] ?? ''));
 
 $bankEndRow = $r - 1;
@@ -738,7 +738,7 @@ for ($i = 0; $i < 3; $i++) { rowH($sheet, $r, 14); $r++; }
 
 rowH($sheet, $r, 14);
 merge($sheet, "B{$r}:D{$r}");
-setCell($sheet, "B{$r}", 'LIPRO LOGISTICS CO.,LTD');
+setCell($sheet, "B{$r}", 'DFAST LOGISTICS CO.,LTD');
 styleRange($sheet, "B{$r}", [
     'font'      => ['bold' => true, 'size' => 8, 'color' => ['rgb' => C_ACCENT], 'name' => 'Calibri'],
     'alignment' => ['horizontal' => Alignment::HORIZONTAL_CENTER],

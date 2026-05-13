@@ -45,7 +45,7 @@ $eur_rate = floatval($shipment['an_exchange_eur'] > 0 ? $shipment['an_exchange_e
 
 $hawb    = $shipment['hawb'] ?? '';
 $cd_no   = $shipment['customs_declaration_no'] ?? '';
-$auto_subject = 'ARRIVAL NOTICE // LIPRO // ' . $hawb . (!empty($cd_no) ? ' // ' . $cd_no : '');
+$auto_subject = 'ARRIVAL NOTICE // DFAST // ' . $hawb . (!empty($cd_no) ? ' // ' . $cd_no : '');
 
 $error = ''; $success = '';
 
@@ -98,14 +98,14 @@ function buildArrivalXlsx($shipment, $foreign_charges, $domestic_charges, $usd_r
     }
     $sheet->getRowDimension($r)->setRowHeight(22);
     $sheet->mergeCells("D{$r}:J{$r}");
-    $sheet->setCellValue("D{$r}", 'LIPRO LOGISTICS CO., LTD');
+    $sheet->setCellValue("D{$r}", 'DFAST LOGISTICS CO., LTD');
     $sheet->getStyle("D{$r}")->applyFromArray(['font'=>['bold'=>true,'size'=>16,'color'=>['rgb'=>$C_RED],'name'=>'Times New Roman'],'alignment'=>['horizontal'=>Alignment::HORIZONTAL_CENTER,'vertical'=>Alignment::VERTICAL_CENTER]]);
     $r++;
 
     foreach([
-        'No. 6 Lane 1002 Lang Street, Lang Ha Ward, Dong Da District, Hanoi City, Vietnam',
-        'Tel: (+84) 366 666 322     Email: lipro.logistics@gmail.com',
-        'MST / Tax Code: 0110453612',
+        'No. 58 Lien Xa Street, Thien Loc Commune, Hanoi City, Vietnam',
+        'Tel: (+84) 366 666 322     Email: dungdaongocanh@gmail.com',
+        'MST / Tax Code: 0111372067',
     ] as $line) {
         $sheet->getRowDimension($r)->setRowHeight(13);
         $sheet->mergeCells("D{$r}:J{$r}");
@@ -276,9 +276,9 @@ function buildArrivalXlsx($shipment, $foreign_charges, $domestic_charges, $usd_r
     $sheet->getRowDimension($r)->setRowHeight(4); $r++;
 
     foreach([
-        ['Số tài khoản / Account No:','9039998888'],
-        ['Ngân hàng / Bank:','Military Commercial Joint Stock Bank (MB Bank)'],
-        ['Người thụ hưởng / Beneficiary:','CONG TY TNHH LIPRO LOGISTICS'],
+        ['Số tài khoản / Account No:','67339999'],
+        ['Ngân hàng / Bank:','Ngân hàng Kỹ thương Việt Nam (TECHCOMBANK)'],
+        ['Người thụ hưởng / Beneficiary:','CONG TY TNHH DFAST LOGISTICS'],
     ] as [$l,$v]) {
         $sheet->getRowDimension($r)->setRowHeight(16);
         $sheet->mergeCells("B{$r}:D{$r}"); $sheet->setCellValue("B{$r}", $l);
@@ -298,7 +298,7 @@ function buildArrivalXlsx($shipment, $foreign_charges, $domestic_charges, $usd_r
     $r += 4;
 
     $sheet->getRowDimension($r)->setRowHeight(14);
-    $sheet->mergeCells("B{$r}:E{$r}"); $sheet->setCellValue("B{$r}", 'LIPRO LOGISTICS CO., LTD');
+    $sheet->mergeCells("B{$r}:E{$r}"); $sheet->setCellValue("B{$r}", 'DFAST LOGISTICS CO., LTD');
     $sheet->getStyle("B{$r}")->applyFromArray(['font'=>['bold'=>true,'size'=>9,'color'=>['rgb'=>$C_RED]],'alignment'=>['horizontal'=>Alignment::HORIZONTAL_CENTER],'borders'=>['top'=>['borderStyle'=>Border::BORDER_THIN,'color'=>['rgb'=>'AAAAAA']]]]);
     $sheet->mergeCells("G{$r}:J{$r}"); $sheet->setCellValue("G{$r}", strtoupper($shipment['company_name']??''));
     $sheet->getStyle("G{$r}")->applyFromArray(['font'=>['bold'=>true,'size'=>9],'alignment'=>['horizontal'=>Alignment::HORIZONTAL_CENTER],'borders'=>['top'=>['borderStyle'=>Border::BORDER_THIN,'color'=>['rgb'=>'AAAAAA']]]]);
@@ -368,8 +368,8 @@ function buildArrivalMailBody($shipment, $foreign_charges, $domestic_charges, $u
     return "<!DOCTYPE html><html><head><meta charset='UTF-8'></head><body style='margin:0;padding:0;background:#f0f2f5;font-family:Arial,sans-serif;font-size:13px;color:#333;'>
 <div style='max-width:700px;margin:20px auto;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,.1);'>
 <div style='background:linear-gradient(135deg,#1B3A6B 0%,#2E75B6 100%);padding:20px 28px;text-align:center;'>
-<h1 style='color:#fff;margin:0 0 4px;font-size:20px;'>LIPRO LOGISTICS CO.,LTD</h1>
-<p style='color:#a8c6e8;margin:0;font-size:11px;'>No. 6 Lane 1002 Lang Street, Lang Ha Ward, Hanoi, Vietnam<br>Tel: (+84) 366 666 322 | Email: lipro.logistics@gmail.com</p></div>
+<h1 style='color:#fff;margin:0 0 4px;font-size:20px;'>DFAST LOGISTICS CO.,LTD</h1>
+<p style='color:#a8c6e8;margin:0;font-size:11px;'>No. 58 Lien Xa Street, Thien Loc Commune, Hanoi City, Vietnam<br>Tel: (+84) 366 666 322 | Email: dungdaongocanh@gmail.com</p></div>
 <div style='background:#C00000;padding:8px 28px;text-align:center;'><h2 style='color:#fff;margin:0;font-size:14px;letter-spacing:2px;'>GIẤY BÁO HÀNG ĐẾN / ARRIVAL NOTICE</h2></div>
 <div style='padding:20px 28px;'>
 <div style='background:#fff8e1;border-left:4px solid #F4B942;padding:10px 14px;margin-bottom:16px;border-radius:4px;'>
@@ -397,13 +397,13 @@ function buildArrivalMailBody($shipment, $foreign_charges, $domestic_charges, $u
 <div style='background:#f8f9fa;border:1px solid #dee2e6;border-radius:6px;padding:14px;margin-bottom:14px;'>
 <h4 style='color:#1B5E20;margin:0 0 8px;font-size:13px;border-bottom:1px solid #dee2e6;padding-bottom:5px;'>Thông tin chuyển khoản:</h4>
 <table style='width:100%;font-size:12px;'>
-<tr><td style='padding:2px 0;font-weight:bold;width:35%;'>Số TK:</td><td>9039998888 (VND)</td></tr>
-<tr><td style='padding:2px 0;font-weight:bold;'>Ngân hàng:</td><td>MB Bank (Quân đội)</td></tr>
-<tr><td style='padding:2px 0;font-weight:bold;'>Thụ hưởng:</td><td>CONG TY TNHH LIPRO LOGISTICS</td></tr>
+<tr><td style='padding:2px 0;font-weight:bold;width:35%;'>Số TK:</td><td>67339999 (VND)</td></tr>
+<tr><td style='padding:2px 0;font-weight:bold;'>Ngân hàng:</td><td>Techcombank</td></tr>
+<tr><td style='padding:2px 0;font-weight:bold;'>Thụ hưởng:</td><td>CONG TY TNHH DFAST LOGISTICS</td></tr>
 </table></div>
 <div style='border-top:1px solid #dee2e6;padding-top:12px;'><p style='margin:0 0 4px;color:#555;'>Trân trọng,</p>
-<p style='margin:0;'><strong style='color:#1B3A6B;font-size:13px;'>LIPRO LOGISTICS CO.,LTD</strong><br>
-<span style='color:#888;font-size:11px;'>📞 (+84) 366 666 322 &nbsp;|&nbsp; ✉️ lipro.logistics@gmail.com</span></p></div>
+<p style='margin:0;'><strong style='color:#1B3A6B;font-size:13px;'>DFAST LOGISTICS CO.,LTD</strong><br>
+<span style='color:#888;font-size:11px;'>📞 (+84) 366 666 322 &nbsp;|&nbsp; ✉️ dungdaongocanh@gmail.com</span></p></div>
 </div>
 <div style='background:#f8f9fa;padding:10px 28px;text-align:center;border-top:1px solid #dee2e6;'>
 <p style='margin:0;color:#aaa;font-size:10px;'>Email được tạo tự động từ hệ thống Forwarder System.</p></div>
@@ -444,7 +444,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['send_mail'])) {
             $mail->Subject = $subject;
             $mail->isHTML(true);
             $mail->Body    = buildArrivalMailBody($shipment, $foreign_charges, $domestic_charges, $usd_rate, $eur_rate, $body_extra);
-            $mail->AltBody = "LIPRO LOGISTICS - ARRIVAL NOTICE\nJob: " . ($shipment['job_no']??'') . "\nHAWB: " . $hawb;
+            $mail->AltBody = "DFAST LOGISTICS - ARRIVAL NOTICE\nJob: " . ($shipment['job_no']??'') . "\nHAWB: " . $hawb;
 
             // Đính kèm Arrival Notice Excel
             $xlsContent = buildArrivalXlsx($shipment, $foreign_charges, $domestic_charges, $usd_rate, $eur_rate);

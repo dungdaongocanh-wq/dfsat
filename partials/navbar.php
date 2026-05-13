@@ -12,7 +12,7 @@ $_dir     = basename(dirname($_SERVER['PHP_SELF']));
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
     <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="/lipro/dashboard.php">
+        <a class="navbar-brand fw-bold" href="/dfsat/dashboard.php">
             <i class="bi bi-box-seam"></i> Forwarder System
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -25,19 +25,19 @@ $_dir     = basename(dirname($_SERVER['PHP_SELF']));
                 <!-- Admin / Staff menu -->
                 <li class="nav-item">
                     <a class="nav-link <?php echo ($_current === 'dashboard.php') ? 'active' : ''; ?>"
-                       href="/lipro/dashboard.php">
+                       href="/dfsat/dashboard.php">
                         <i class="bi bi-speedometer2"></i> Dashboard
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?php echo ($_dir === 'customers') ? 'active' : ''; ?>"
-                       href="/lipro/customers/index.php">
+                       href="/dfsat/customers/index.php">
                         <i class="bi bi-people"></i> Khách hàng
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?php echo ($_dir === 'quotations') ? 'active' : ''; ?>"
-                       href="/lipro/quotations/index.php">
+                       href="/dfsat/quotations/index.php">
                         <i class="bi bi-file-earmark-text"></i> Báo Giá
                     </a>
                 </li>
@@ -46,7 +46,7 @@ $_dir     = basename(dirname($_SERVER['PHP_SELF']));
                 <!-- Lô hàng — tất cả đều thấy -->
                 <li class="nav-item">
                     <a class="nav-link <?php echo ($_dir === 'shipments') ? 'active' : ''; ?>"
-                       href="/lipro/shipments/index.php">
+                       href="/dfsat/shipments/index.php">
                         <i class="bi bi-box"></i> Lô hàng
                         <?php if (!isSupplier()): ?>
                         <?php
@@ -66,13 +66,13 @@ $_dir     = basename(dirname($_SERVER['PHP_SELF']));
                 <?php if (!isSupplier()): ?>
                 <li class="nav-item">
                     <a class="nav-link <?php echo ($_dir === 'debt') ? 'active' : ''; ?>"
-                       href="/lipro/debt/debt.php">
+                       href="/dfsat/debt/debt.php">
                         <i class="bi bi-cash-coin"></i> Công Nợ
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?php echo ($_dir === 'suppliers') ? 'active' : ''; ?>"
-                       href="/lipro/suppliers/index.php">
+                       href="/dfsat/suppliers/index.php">
                         <i class="bi bi-truck"></i> Nhà cung cấp
                     </a>
                 </li>
@@ -84,10 +84,10 @@ $_dir     = basename(dirname($_SERVER['PHP_SELF']));
                         <i class="bi bi-gear"></i> Quản trị
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/lipro/accounts/index.php">
+                        <li><a class="dropdown-item" href="/dfsat/accounts/index.php">
                             <i class="bi bi-person-badge"></i> Tài khoản
                         </a></li>
-                        <li><a class="dropdown-item" href="/lipro/cost_codes/index.php">
+                        <li><a class="dropdown-item" href="/dfsat/cost_codes/index.php">
                             <i class="bi bi-tag"></i> Mã chi phí
                         </a></li>
                     </ul>
@@ -100,7 +100,7 @@ $_dir     = basename(dirname($_SERVER['PHP_SELF']));
             <ul class="navbar-nav align-items-center">
                 <?php if (!isSupplier() && $_unread > 0): ?>
                 <li class="nav-item me-2">
-                    <a href="/lipro/notifications/index.php" class="btn btn-warning btn-sm position-relative">
+                    <a href="/dfsat/notifications/index.php" class="btn btn-warning btn-sm position-relative">
                         <i class="bi bi-bell-fill"></i>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             <?php echo $_unread; ?>
@@ -129,7 +129,7 @@ $_dir     = basename(dirname($_SERVER['PHP_SELF']));
                         </span></li>
                         <li><hr class="dropdown-divider"></li>
                         <?php endif; ?>
-                        <li><a class="dropdown-item" href="/lipro/logout.php">
+                        <li><a class="dropdown-item" href="/dfsat/logout.php">
                             <i class="bi bi-box-arrow-right"></i> Đăng xuất
                         </a></li>
                     </ul>

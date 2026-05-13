@@ -311,7 +311,7 @@ if ($export_soa && $soa_customer > 0) {
         </div>
         <table style="border:none;margin-bottom:10px;"><tr>
             <td style="border:none;width:50%;">
-                <strong>LIPRO FORWARDER</strong><br>
+                <strong>DFAST FORWARDER</strong><br>
                 Ngày xuất: ' . $now . '
             </td>
             <td style="border:none;text-align:right;">

@@ -325,10 +325,10 @@ function renderCostCodeCell(array $arrivalCodes, array $arrivalCodeList, string 
     <!-- Header công ty -->
     <div class="row mb-3">
         <div class="col-md-6">
-            <h5 class="mb-0 fw-bold">CÔNG TY TNHH LIPRO LOGISTICS</h5>
+            <h5 class="mb-0 fw-bold">CÔNG TY TNHH DFAST LOGISTICS</h5>
             <small class="text-muted">
-                Địa chỉ: No. 6 Lane 1002 Lang Street, Lang Ha Ward, Hanoi<br>
-                Email: lipro.logistics@gmail.com | Tel: (+84) 366 666 322
+                Địa chỉ: Số 58, Đường Liên Xã, Xã Thiên Lộc, Thành phố Hà Nội<br>
+                Email: dungdaongocanh@gmail.com | Tel: (+84) 366 666 322
             </small>
         </div>
         <div class="col-md-6 text-md-end">
@@ -527,9 +527,9 @@ function renderCostCodeCell(array $arrivalCodes, array $arrivalCodeList, string 
             <div class="card-header fw-semibold">Thông tin chuyển khoản</div>
             <div class="card-body">
                 <table class="table table-sm table-bordered w-auto">
-                    <tr><td class="fw-semibold">Số tài khoản / Account No</td><td>9039998888</td></tr>
-                    <tr><td class="fw-semibold">Ngân hàng / Bank</td><td>Military Commercial Joint Stock Bank (MB Bank)</td></tr>
-                    <tr><td class="fw-semibold">Người thụ hưởng / Beneficiary</td><td>CONG TY TNHH LIPRO LOGISTICS</td></tr>
+                    <tr><td class="fw-semibold">Số tài khoản / Account No</td><td>67339999</td></tr>
+                    <tr><td class="fw-semibold">Ngân hàng / Bank</td><td>Ngân hàng Kỹ thương Việt Nam (TECHCOMBANK)</td></tr>
+                    <tr><td class="fw-semibold">Người thụ hưởng / Beneficiary</td><td>CONG TY TNHH DFAST LOGISTICS</td></tr>
                 </table>
             </div>
         </div>
