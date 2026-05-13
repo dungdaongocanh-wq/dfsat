@@ -460,14 +460,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['send_mail'])) {
 
             $mail->send();
 
-            // Cập nhật trạng thái
-            $sent_at = date('Y-m-d H:i:s');
-            $conn2 = getDBConnection();
-            $stmt_upd = $conn2->prepare("UPDATE shipments SET arrival_notice_sent='yes', arrival_notice_sent_at=? WHERE id=?");
-            $stmt_upd->bind_param("si", $sent_at, $id);
-            $stmt_upd->execute();
-            $stmt_upd->close();
-            $conn2->close();
+            // Cập nhật trạng thái + tự động chuyển sang "Đã thông quan"
+$sent_at = date('Y-m-d H:i:s');
+$conn2 = getDBConnection();
+$stmt_upd = $conn2->prepare("UPDATE shipments SET arrival_notice_sent='yes', arrival_notice_sent_at=?, status='cleared' WHERE id=?");
+$stmt_upd->bind_param("si", $sent_at, $id);
+$stmt_upd->execute();
+$stmt_upd->close();
+$conn2->close();
 
             $shipment['arrival_notice_sent']    = 'yes';
             $shipment['arrival_notice_sent_at'] = $sent_at;

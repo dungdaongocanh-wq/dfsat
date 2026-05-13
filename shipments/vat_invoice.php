@@ -190,15 +190,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 vat_issued_by      = ?
                                 WHERE id = ?");
                             if (!$stmt2) {
-                                // fallback nếu không có cột form/mtc
                                 $stmt2 = $conn2->prepare("UPDATE shipments SET
-                                    vat_invoice_guid   = ?,
-                                    vat_invoice_no     = ?,
-                                    vat_invoice_serial = ?,
-                                    vat_invoice_status = 'issued',
-                                    vat_issued_at      = ?,
-                                    vat_issued_by      = ?
-                                    WHERE id = ?");
+    vat_invoice_guid   = ?,
+    vat_invoice_no     = ?,
+    vat_invoice_serial = ?,
+    vat_invoice_form   = ?,
+    vat_invoice_mtc    = ?,
+    vat_invoice_status = 'issued',
+    vat_issued_at      = ?,
+    vat_issued_by      = ?
+    WHERE id = ?");
                                 if (!$stmt2) throw new \Exception('DB error: ' . $conn2->error);
                                 $stmt2->bind_param("ssssii",
                                     $guid, $invNo, $serial, $issuedAt, $userId, $id);
