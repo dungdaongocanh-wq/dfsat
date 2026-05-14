@@ -1,9 +1,9 @@
 <?php
 // Cấu hình kết nối database
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');       // XAMPP mặc định là root
-define('DB_PASS', '');           // XAMPP mặc định không có password
-define('DB_NAME', 'dfsat');
+define('DB_USER', 'liprolog_user');
+define('DB_PASS', 'dung@123A');
+define('DB_NAME', 'liprolog_dfastlog');
 
 // Tạo kết nối
 function getDBConnection() {
